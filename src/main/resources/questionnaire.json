@@ -1,0 +1,89 @@
+{
+  "id": "q1",
+  "text": "Genovian Pear Medication Eligibility Questionnaire",
+  "name": "gen_pear_allergy_eligibility",
+  "sections": [
+    {
+      "id": "s1",
+      "text": "Basic Safety Screening",
+      "questions": [
+        {
+          "id": "q1_1",
+          "text": "Are you currently pregnant?",
+          "questionType": "BOOLEAN",
+          "trueLabel": "yes",
+          "falseLabel": "no",
+          "highRiskTrue": true,
+          "highRiskFalse": false,
+          "trueSection": {
+            "id": "s1_1",
+            "text": "Pregnancy Details",
+            "questions": [
+              {
+                "id": "q1_1_1",
+                "text": "Has your doctor advised against this medication during pregnancy?",
+                "questionType": "BOOLEAN",
+                "highRiskTrue": true,
+                "highRiskFalse": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q1_2",
+          "text": "Do you have any known allergies to medications?",
+          "questionType": "BOOLEAN",
+          "trueLabel": "yes",
+          "falseLabel": "no",
+          "highRiskTrue": false,
+          "highRiskFalse": false,
+          "trueSection": {
+            "id": "s1_2",
+            "text": "Allergy Information",
+            "questions": [
+              {
+                "id": "q1_2_1",
+                "text": "Please list the medications you are allergic to.",
+                "questionType": "TEXT"
+              },
+              {
+                "id": "q1_2_2",
+                "text": "Is the prescribed medication among these?",
+                "questionType": "BOOLEAN",
+                "highRiskTrue": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Condition Assessment",
+      "questions": [
+        {
+          "id": "q2_1",
+          "text": "Have you been diagnosed with any severe heart conditions?",
+          "questionType": "BOOLEAN",
+          "highRiskTrue": true
+        },
+        {
+          "id": "q2_2",
+          "text": "Are you currently taking any other medications?",
+          "questionType": "BOOLEAN",
+          "trueSection": {
+            "id": "s2_1",
+            "text": "Medication List",
+            "questions": [
+              {
+                "id": "q2_2_1",
+                "text": "Please list all medications you are currently taking.",
+                "questionType": "TEXT"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

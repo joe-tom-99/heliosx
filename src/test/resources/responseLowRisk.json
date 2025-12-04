@@ -1,0 +1,48 @@
+{
+  "id": "low-risk-id",
+  "userId": "user1",
+  "questionnaireId": "q1",
+  "responses": [
+    {
+      "questionId": "q2_2",
+      "boolValue": false,
+      "strValue": null
+    },
+    {
+      "questionId": "q1_2_2",
+      "boolValue": false,
+      "strValue": null
+    },
+    {
+      "questionId": "q1_1",
+      "boolValue": false,
+      "strValue": null
+    },
+    {
+      "questionId": "q1_1_1",
+      "boolValue": null,
+      "strValue": null
+    },
+    {
+      "questionId": "q2_2_1",
+      "boolValue": null,
+      "strValue": null
+    },
+    {
+      "questionId": "q1_2",
+      "boolValue": true,
+      "strValue": null
+    },
+    {
+      "questionId": "q1_2_1",
+      "boolValue": null,
+      "strValue": "Penicillin"
+    },
+    {
+      "questionId": "q2_1",
+      "boolValue": false,
+      "strValue": null
+    }
+  ],
+  "highRisk": false
+}
